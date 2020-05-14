@@ -23,9 +23,9 @@ Hi {}, my name is {}. If you have any questions on how to use me, read /help \
 and then head to [GoGreenKernelSupport](https://t.me/@gogreenDarkness)
 
 I'm a group manager bot completely based on Paul's popular Marie bot built in python3, \
-using the python-telegram-bot library with not many changes , other credit @hyperteminal.
+using the python-telegram-bot library with not many changes , other credit @hyperterminal.
 
-My master: DarknessHiddenorg
+My master: @DarknessHiddenorg
 My source: [Github](https://github.com/areyoudeveloper/ParallaxBot/)
 
 You can find the list of available commands with /help.

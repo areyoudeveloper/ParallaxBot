@@ -61,7 +61,7 @@ def cuaca(update, context):
     except pyowm.exceptions.api_call_error.APICallError:
         bot.sendMessage(update.effective_message, "Insert Location To gcufo")
     except pyowm.exceptions.api_response_error.NotFoundError:
-    bot.sendMessage(update.effective_message, "Sorry, lokasi too gay to be founded 😞")
+    bot.sendMessage(update.effective_message, "Sorry not found")
     else:
         return
 

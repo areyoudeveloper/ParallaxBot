@@ -15,7 +15,7 @@ def cuaca(update, context):
     args = context.args
     location = " ".join(args)
     if location.lower() == context.bot.first_name.lower():
-        bot.sendMessage(update.effective_message, "Me still seen!"))
+        bot.sendMessage(update.effective_message, "Me still seen!")
         context.bot.send_sticker(update.effective_chat.id, BAN_STICKER)
         return
 
@@ -56,12 +56,12 @@ def cuaca(update, context):
         cuacabsk = besok.get_weather_code()
 
         bot.sendMessage(update.effective_message, "{} Weather today {}, is {}°C.\n").format(lokasinya,
-                statusnya, temperatur))
+                statusnya, temperatur)
 
     except pyowm.exceptions.api_call_error.APICallError:
-        bot.sendMessage(update.effective_message, "Insert Location To gcufo"))
+        bot.sendMessage(update.effective_message, "Insert Location To gcufo")
     except pyowm.exceptions.api_response_error.NotFoundError:
-    bot.sendMessage(update.effective_message, "Sorry,Location too gay to be founded 😞"))
+    bot.sendMessage(update.effective_message, "Sorry,Location too gay to be founded 😞")
     else:
         return
 

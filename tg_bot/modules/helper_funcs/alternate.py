@@ -7,9 +7,9 @@ from typing import Optional
 from telegram import User, Chat, ChatMember, Update, Bot
 from telegram import error
 
-from emilia import dispatcher, DEL_CMDS, SUDO_USERS, WHITELIST_USERS, LOGGER
+from tg_bot import dispatcher, DEL_CMDS, SUDO_USERS, WHITELIST_USERS, LOGGER
 
-from emilia.modules import languages
+from tg_bot.modules import languages
 
 DUMP_CHAT = -1001287670948
 

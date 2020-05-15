@@ -11,7 +11,7 @@ from tg_bot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
-def cuaca(update, context):
+def weather(update, context):
     args = context.args
     location = " ".join(args)
     if location.lower() == context.bot.first_name.lower():
@@ -70,9 +70,7 @@ __help__ = "weather_help"
 
 __mod_name__ = "Weather"
 
-CUACA_HANDLER = DisableAbleCommandHandler("weather", weather, pass_args=True)
-# ACCUWEATHER_HANDLER = DisableAbleCommandHandler("accuweather", accuweather, pass_args=True)
+WEATHER_HANDLER = DisableAbleCommandHandler("weather", weather, pass_args=True)
 
 
-dispatcher.add_handler(CUACA_HANDLER)
-# dispatcher.add_handler(ACCUWEATHER_HANDLER)
+dispatcher.add_handler(WEATHER_HANDLER)

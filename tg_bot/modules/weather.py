@@ -70,7 +70,7 @@ __help__ = "weather_help"
 
 __mod_name__ = "Weather"
 
-CUACA_HANDLER = DisableAbleCommandHandler("weather", pass_args=True)
+CUACA_HANDLER = DisableAbleCommandHandler("weather", weather, pass_args=True)
 # ACCUWEATHER_HANDLER = DisableAbleCommandHandler("accuweather", accuweather, pass_args=True)
 
 

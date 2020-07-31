@@ -1,6 +1,6 @@
 import time
 import os
-from tg_bot import Client, Filters
+from tg_bot import Filters
 from tg_bot import COMMAND_HAND_LER
 
 __PLUGIN__ = os.path.basename(__file__.replace(".py", ""))
@@ -14,7 +14,7 @@ __help__ = f"""
 """
 
 @Client.on_message(Filters.command("fban", COMMAND_HAND_LER) & Filters.me)
-async def fban_user(client, message):
+async def fban_user(message):
     if len(message.command) >= 3:
         cmd = message.text.split(" ",1)
         fban_string = cmd[1]

@@ -42,7 +42,7 @@ from aiogram.utils.exceptions import Unauthorized, NeedAdministratorRightsInTheC
 from babel.dates import format_timedelta
 from datetime import datetime, timedelta
 
-from sophie_bot import OWNER_ID, BOT_ID, OPERATORS, decorator, bot
+from tg_bot import OWNER_ID, BOT_ID, OPERATORS, decorator, bot
 from tg_bot.services.mongo import db
 from tg_bot.services.redis import redis
 from tg_bot.services.telethon import tbot

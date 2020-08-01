@@ -43,9 +43,9 @@ from babel.dates import format_timedelta
 from datetime import datetime, timedelta
 
 from sophie_bot import OWNER_ID, BOT_ID, OPERATORS, decorator, bot
-from sophie_bot.services.mongo import db
-from sophie_bot.services.redis import redis
-from sophie_bot.services.telethon import tbot
+from tg_bot.services.mongo import db
+from tg_bot.services.redis import redis
+from tg_bot.services.telethon import tbot
 
 from .utils.connections import get_connected_chat, chat_connection
 from .utils.language import get_strings_dec, get_strings, get_string
